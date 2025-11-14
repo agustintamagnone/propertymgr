@@ -1,7 +1,7 @@
 namespace propertymgr.domain
 {
-    public class Property {
-
+    public class Property 
+    {
         private Guid PropertyId { get; set; }
         public string? Name { get; set; }
         public float Price { get; set; }
