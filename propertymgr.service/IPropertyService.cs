@@ -2,7 +2,7 @@ using propertymgr.domain;
 
 namespace propertymgr.service;
 
-public interface PropertyService
+public interface IPropertyService
 {
     Property AddProperty(Property property);
     Property DeleteProperty(Property property);

@@ -1,21 +1,22 @@
-using System.ComponentModel;
 using propertymgr.domain;
 
 namespace propertymgr.service;
 
-public class OwnerServiceImpl
+public class OwnerServiceImpl : IOwnerService
 {
     private readonly HashSet<Owner> _owners = new HashSet<Owner>();
     public void CreateListOwners(Owner owner) => _owners.Add(owner);
         
-    public void AddOwner(Owner owner)
+    public Owner AddOwner(Owner owner)
     {
-        
+        _owners.Add(owner);
+        return owner;
     }
 
-    public void DeleteOwner(Owner owner)
+    public Owner DeleteOwner(Owner owner)
     {
-        
+        _owners.Remove(owner);
+        return owner;
     }
 
     public IEnumerable<Owner> PrintOwners()

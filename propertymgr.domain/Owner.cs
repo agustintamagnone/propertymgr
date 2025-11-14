@@ -1,6 +1,6 @@
-namespace propertymgr.domain {
-
-    public class Owner
+namespace propertymgr.domain 
+{
+    public class Owner 
     {
         private Guid OwnerId { get; set; }
         public Guid NationalId { get; set; }
