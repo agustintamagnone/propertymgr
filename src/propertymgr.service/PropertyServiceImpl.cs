@@ -2,7 +2,7 @@ using propertymgr.domain;
 
 namespace propertymgr.service;
 
-public class PropertyServiceImpl : IPropertyService
+public class PropertyService
 {
     private readonly HashSet<Property> _properties = new HashSet<Property>();
     public void CreateListProperties(Property property) => _properties.Add(property);
