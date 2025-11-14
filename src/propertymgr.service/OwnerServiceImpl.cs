@@ -2,7 +2,7 @@ using propertymgr.domain;
 
 namespace propertymgr.service;
 
-public class OwnerServiceImpl : IOwnerService
+public class OwnerService
 {
     private readonly HashSet<Owner> _owners = new HashSet<Owner>();
     public void CreateListOwners(Owner owner) => _owners.Add(owner);

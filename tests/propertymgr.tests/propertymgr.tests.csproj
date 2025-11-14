@@ -18,9 +18,4 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\src\propertymgr.service\propertymgr.service.csproj" />
-    <ProjectReference Include="..\..\src\propertymgr.domain\propertymgr.domain.csproj" />
-  </ItemGroup>
-
 </Project>
